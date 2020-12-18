@@ -1,0 +1,317 @@
+body {
+    background-color: #021834;
+    font-family: 'Open Sans', sans-serif; 
+    width: 100%; 
+    height: 100%;  
+}
+/****** Global *******/
+button {
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+}
+button:focus {outline:0;}
+.grayButton {
+    background-color: #d9d9d9;
+    border: #d9d9d9;
+    color: black; 
+}
+.grayButton:hover {
+    background-color: #c4c4c4;
+}
+.noTextDecoration {
+    text-decoration: none;
+}
+
+/******* Container  ********/
+/* Join Page */
+.container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.join1 {
+    width: 100%;
+    padding: 5%;
+    text-align: right;
+}
+.join2 {
+    width: 100%;
+    padding: 5% 5% 5% 0;
+}
+/* Chat Page */
+.chatArea {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 85%;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.groupContainer {
+    color: white;
+    background-color: #545454;
+    border-radius: 1rem;
+    padding: 2rem; 
+    margin-right: 2rem;
+    min-width: 15%;
+    margin-left: 8%; 
+    height: 80%;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+}
+.chatContainer {
+    width: 85%; 
+    margin-right: 8%; 
+    height: 80%;
+}
+.leaveButton {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: #AAC6EB;
+}
+.leaveButton:hover {
+    background-color: #7D92AD;
+}
+
+/******* Join Page ********/
+.logo { 
+    width: 150px;
+    position: relative;
+    right: 160px; 
+    top: 10px; 
+    z-index: -1;
+}
+.title {
+    color: white; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 6rem;
+    position: relative;
+    bottom: 10px; 
+}
+.subtitle {
+    color: white; 
+    font-family: 'Sanchez', serif;
+    font-size: 1.7rem;
+    position: relative;
+    bottom: 10px; 
+}
+.subtitleGreen {
+    color: #7dc4b2; 
+}
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2.5rem; 
+    max-width: 450px;
+}
+.cardDiv {
+    width: 100%; 
+}
+.heading {
+    color: #021834;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.form {
+    border: solid #0c6951 .4rem; 
+    padding: 1rem; 
+    border-radius: .5rem;
+    font-size: 1rem;
+    width: 89%; 
+}
+.form[type=text]:focus {
+    border: solid #0c3b2f .4rem; 
+    border-radius: .5rem;
+    outline: none;
+}
+.formHeading {
+    padding-top: 1rem;
+    padding-bottom: .2rem;
+}
+.button {
+    border: #021834; 
+    margin-top: 1rem; 
+    color: white;
+    background-color: #021834;
+    cursor: pointer;
+}
+
+/******* Chat Page ********/
+.chatContainer {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem; 
+}
+/* Logo */
+.chatLogoContainer {
+    width: 100%;
+    display: flex;
+}
+.chatTitle {
+    color: white; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+.chatLogo {
+    width: 45px;
+    z-index: -1;
+    padding-right: .5rem;
+    padding-left: .5rem;
+}
+/* Text Container */
+.groupHeading {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.dot {
+    padding-right: .5rem; 
+    position: relative;
+    bottom: .2rem; 
+}
+/* Input */
+form {
+    width: 100%; 
+}
+.chatBottom {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+}
+.chatInput {
+    border: solid #d9d9d9 .4rem; 
+    padding: .75rem; 
+    border-radius: .5rem;
+    font-size: 1rem;
+    margin-right: 1rem; 
+    flex-grow: 4;
+}
+.chatInput[type=text]:focus {
+    border: solid #c4c4c4 .4rem; 
+    border-radius: .5rem;
+    outline: none;
+}
+/* Message */
+.messages {
+    height: 92%;
+}
+.message {
+    padding: .9rem;
+    border-radius: .5rem;
+    display: inline-block; 
+    clear:both; 
+    margin-bottom: 1rem;
+}
+.userMessageContainer {
+    text-align: right;
+}
+.userMessage {
+    background-color: #c4c4c4;
+}
+.otherMessage {
+    background-color: #c3e4dc;
+}
+.otherUser{
+    color: #545454;
+    display: inline-block;
+    padding-left: .5rem; 
+}
+
+/******* Footer ********/
+footer {
+    color: white; 
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-bottom: .5rem;
+    width: 100%;
+    background-color: #021834;
+}
+.footerLink {
+    color: #7dc4b2;
+}
+.footerLink:hover {
+    color: #0c6951;
+    cursor: pointer;
+}
+
+/******* Responsive Design ********/
+@media only screen and (max-width: 1063px) {
+/* Container */
+.container {
+    flex-direction: column;
+}
+.join1 {
+    text-align: center;
+    padding: 0;
+    padding-bottom: 1rem;
+}
+.join2 {
+    width: 100%; 
+    padding: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+/* Join Page */
+.card {
+    width: 70%;
+    margin: 0 auto;
+}
+.logo { 
+    width: 100px;
+    position: relative;
+    right: 1rem; 
+    top: 1.5rem; 
+    z-index: -1;
+}
+.title {
+    font-size: 5rem;
+    bottom: 0; 
+}
+.subtitle {
+    font-size: 1.2rem;
+    bottom: 0; 
+}
+
+/* Chat Page */
+.chatArea {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.groupContainer {
+    margin-right: 0; 
+    width: 70%;
+    margin-left: 0;  
+    max-height: 20%;
+    background-color: #021834;
+    text-align: right;
+    padding-right: 0;
+}
+.chatContainer {
+    width: 70%; 
+    margin-right: 0; 
+    height: 50%;
+    padding-bottom: 3.5rem;
+}
+.leaveButton {
+    display: inline-block;
+    width: 40%;
+}
+.hide {
+    display: none;
+}
